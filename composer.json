@@ -1,0 +1,51 @@
+{
+    "name": "furkan/codeigniter4-api-starter-kit",
+    "description": "CodeIgniter 4 API Starter Kit with JWT Authentication",
+    "license": "MIT",
+    "type": "project",
+    "keywords": ["codeigniter4", "api", "jwt", "rest", "starter-kit"],
+    "homepage": "https://github.com/kullaniciadi/codeigniter4-api-starter-kit",
+    "authors": [
+        {
+            "name": "Furkan",
+            "email": "furkan@example.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "codeigniter4/framework": "^4.0",
+        "firebase/php-jwt": "^6.11"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.24",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^10.5.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Config\\": "app/Config/"
+        },
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Support\\": "tests/_support"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "post-update-cmd": [
+            "php spark migrate"
+        ]
+    },
+    "minimum-stability": "stable"
+}
