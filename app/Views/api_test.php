@@ -64,14 +64,14 @@
             <div class="mt-3">
                 <div class="form-group mb-3">
                     <label for="loginEmail">Email:</label>
-                    <input type="email" class="form-control" id="loginEmail" value="ahmet@ornek.com">
+                    <input type="email" class="form-control" id="loginEmail" value="john.doe@example.com">
                 </div>
                 <div class="form-group mb-3">
                     <label for="loginPassword">Password:</label>
                     <input type="password" class="form-control" id="loginPassword" value="123456">
                 </div>
                 <div class="mb-3">
-                    <small class="text-muted">* Sample user: ahmet@ornek.com / 123456</small>
+                    <small class="text-muted">* Sample user: john.doe@example.com / 123456</small>
                 </div>
                 <button class="btn btn-success" id="loginButton">Login</button>
             </div>
@@ -135,8 +135,8 @@
                         <label for="userData">Request Data (JSON):</label>
                         <textarea class="form-control" id="userData" rows="5">
 {
-    "name": "Fatma Sahin",
-    "email": "fatma@example.com",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
     "password": "123456"
 }</textarea>
                     </div>
